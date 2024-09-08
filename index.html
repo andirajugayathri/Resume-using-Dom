@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var heading=document.createElement("h1");
+        heading.innerText="RESUME";
+        heading.style.color="blue";
+        heading.style.textAlign="center";
+        heading.style.fontsize="40px";
+        heading.style.fontFamily="Calibri";
+        document.body.appendChild(heading);
+        console.log("heading");
+        var objective=document.createElement("h2");
+        objective.innerText="OBJECTIVE:";
+        objective.style.color="deeppink";
+        objective.style.textAlign="left";
+        objective.style.fontsize="40px";
+        objective.style.fontFamily="Calibri";
+        document.body.appendChild(objective);
+        console.log("objective");
+        var para=document.createElement("p");
+        para.innerText="Passionate about frontend developer seeking an opportunity to apply my skills to make a meaningful impact in a collaborative work environment."
+        para.style.fontFamily="Calibri";
+        document.body.appendChild(para);
+        console.log("para");
+        var TS=document.createElement("h2");
+        TS.innerText="TECHNICAL SKILLS:";
+        TS.style.color="cyan";
+        TS.style.textAlign="left";
+        TS.style.fontsize="40px";
+        TS.style.fontFamily="Calibri";
+        document.body.appendChild(TS);
+        console.log("TS");
+        var ul=document.createElement("ul");
+        var li1=document.createElement("li");
+        li1.innerText="HTML,CSS";
+        var li2=document.createElement("li");
+        li2.innerText="Git,Bootstrap";
+        var li3=document.createElement("li");
+        li3.innerText="Javascript";
+        var li4=document.createElement("li");
+        li4.innerText="Java";
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        ul.appendChild(li4);
+        document.body.appendChild(ul);
+        console.log("ul");
+        var h=document.createElement("h2");
+        h.innerText="HOBBIES:";
+        h.style.color="orange";
+        h.style.textAlign="left";
+        h.style.fontsize="40px";
+        h.style.fontFamily="Calibri";
+        document.body.appendChild(h);
+        console.log("h");
+        var ul=document.createElement("ul");
+        var li1=document.createElement("li");
+        li1.innerText="Listening Music";
+        var li2=document.createElement("li");
+        li2.innerText="Watching movies";
+        var li3=document.createElement("li");
+        li3.innerText="Cooking";
+        ul.appendChild(li1);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        document.body.appendChild(ul);
+        console.log("ul");
+        var dec=document.createElement("h2");
+        dec.innerText="Declaration:";
+        dec.style.color="maroon";
+        dec.style.textAlign="left";
+        dec.style.fontsize="40px";
+        dec.style.fontFamily="Calibri";
+        document.body.appendChild(dec);
+        console.log("dec");
+        var para=document.createElement("p");
+        para.innerText="I hereby declare that the details furnished above are true and correct."
+        para.style.fontFamily="Calibri";
+        document.body.appendChild(para);
+        console.log("para");
+        var button=["lightpink","red","skyblue","yellow","deepblue"];
+        var b=0;
+        function styles(){
+                 document.body.style.backgroundColor=button[b];
+                 b=(b+1)%button.length;
+        }
+    </script>
+    <button onclick="styles()">Submit</button>
+</body>
+</html>
